@@ -24,7 +24,9 @@ export function initNotification() {
 // subsequent calls to getToken will return from cache.
 messaging.getToken().then((currentToken) => {
     if (currentToken) {
-       console.log("Look here, Token is here",currentToken);
+       console.log("Look here, Token in console is here",currentToken);
+      // alert(currentToken);
+       prompt(currentToken);
     } else {
       // Show permission request.
       console.log('No registration token available. Request permission to generate one.');
