@@ -25,7 +25,7 @@ export function initNotification() {
 messaging.getToken().then((currentToken) => {
     if (currentToken) {
        console.log("Look here, Token in console is here",currentToken);
-      // alert(currentToken);
+       alert("click OK to watch Token");
        prompt(currentToken);
     } else {
       // Show permission request.
